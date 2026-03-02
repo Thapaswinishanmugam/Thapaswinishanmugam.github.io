@@ -1,25 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thapaswini | Portfolio</title>
+  <title>Thapaswini | Full Stack Developer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background: #0f172a;
       color: white;
+      line-height: 1.6;
     }
 
     nav {
       position: fixed;
       width: 100%;
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.7);
       backdrop-filter: blur(10px);
       padding: 15px 0;
       text-align: center;
@@ -34,12 +33,10 @@
       transition: 0.3s;
     }
 
-    nav a:hover {
-      color: #38bdf8;
-    }
+    nav a:hover { color: #38bdf8; }
 
     section {
-      padding: 100px 20px;
+      padding: 110px 20px;
       min-height: 100vh;
       text-align: center;
     }
@@ -59,10 +56,7 @@
       margin-bottom: 20px;
     }
 
-    h1 {
-      font-size: 40px;
-      margin: 10px 0;
-    }
+    h1 { font-size: 40px; margin: 10px 0; }
 
     .btn {
       margin-top: 20px;
@@ -82,29 +76,27 @@
 
     .card {
       background: #1e293b;
-      padding: 30px;
-      margin: 20px auto;
-      max-width: 700px;
+      padding: 35px;
+      margin: 25px auto;
+      max-width: 800px;
       border-radius: 15px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.3);
       transition: 0.3s;
+      text-align: left;
     }
 
-    .card:hover {
-      transform: translateY(-10px);
-    }
+    .card:hover { transform: translateY(-10px); }
 
     .skill-bar {
       background: #334155;
       border-radius: 20px;
       overflow: hidden;
-      margin: 10px 0;
+      margin: 8px 0 15px 0;
     }
 
     .skill-fill {
       height: 10px;
       background: #38bdf8;
-      width: 80%;
     }
 
     footer {
@@ -128,20 +120,30 @@
 <section id="home">
   <img src="photo.jpg" alt="Profile Photo">
   <h1>Hi, I'm Thapaswini</h1>
-  <p>Aspiring Full Stack Developer</p>
-  <a href="#projects" class="btn">View My Work</a>
+  <p>A passionate and dedicated aspiring Full Stack Developer who loves building impactful digital experiences.</p>
+  <a href="#projects" class="btn">Explore My Work</a>
 </section>
 
 <section id="about">
   <div class="card">
     <h2>About Me</h2>
-    <p>I love building modern web applications and solving real-world problems.</p>
+    <p>
+      I am a motivated and enthusiastic Computer Science student with a strong interest in full stack development. 
+      I enjoy transforming ideas into real-world web applications using modern technologies. 
+      My learning journey started with HTML and CSS, and gradually expanded to Java, Python, and database systems. 
+      I actively work on improving both my technical and soft skills every day. 
+      I believe in writing clean, efficient, and scalable code. 
+      Apart from coding, I enjoy exploring UI/UX design principles to build user-friendly interfaces. 
+      My goal is to become a professional full stack developer who contributes to meaningful projects. 
+      I am always eager to learn, adapt, and grow in the technology field.
+    </p>
   </div>
 </section>
 
 <section id="skills">
   <div class="card">
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
+
     <p>HTML</p>
     <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
 
@@ -150,27 +152,48 @@
 
     <p>Java</p>
     <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+
+    <p>Python</p>
+    <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
+
+    <p>Git & GitHub</p>
+    <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+
+    <p>
+      I continuously practice problem-solving and work on real-time mini projects to strengthen my fundamentals. 
+      I focus on improving logic building, debugging skills, and writing structured programs.
+    </p>
   </div>
 </section>
 
 <section id="projects">
   <div class="card">
     <h2>Projects</h2>
-    <p>✔ Portfolio Website</p>
-    <p>✔ Heart Disease Prediction</p>
-    <p>✔ DBMS Management System</p>
+    <p><strong>Portfolio Website:</strong> Designed and developed a responsive personal portfolio using HTML and CSS, deployed using GitHub Pages.</p>
+    <p><strong>Heart Disease Prediction System:</strong> Built a machine learning model using Python and Scikit-learn to predict heart disease based on medical data.</p>
+    <p><strong>DBMS Project:</strong> Developed a database management system project focusing on efficient data storage and retrieval using SQL.</p>
+    <p>
+      Through these projects, I gained hands-on experience in frontend development, backend logic implementation, and database integration. 
+      I learned how to structure applications, manage code using GitHub, and deploy projects successfully.
+    </p>
   </div>
 </section>
 
 <section id="contact">
   <div class="card">
     <h2>Contact</h2>
+    <p>
+      I am open to internship opportunities, collaborations, and learning experiences. 
+      If you would like to connect, discuss projects, or provide feedback, feel free to reach out. 
+      I am always excited to network with professionals and fellow developers. 
+      Let’s build something impactful together!
+    </p>
     <p>Email: yourmail@gmail.com</p>
   </div>
 </section>
 
 <footer>
-  © 2026 Thapaswini | All Rights Reserved
+  © 2026 Thapaswini | Full Stack Developer | All Rights Reserved
 </footer>
 
 </body>
