@@ -10,81 +10,75 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #ffffff;
-      color: #1f2937;
-      line-height: 1.7;
+      background: #0f172a;
+      color: #e2e8f0;
+      line-height: 1.8;
     }
 
     nav {
       position: fixed;
       width: 100%;
-      background: #ffffff;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      padding: 15px 0;
+      background: rgba(15,23,42,0.95);
+      padding: 18px 0;
       text-align: center;
+      border-bottom: 1px solid #1e293b;
       z-index: 1000;
     }
 
     nav a {
       text-decoration: none;
       margin: 0 25px;
-      color: #374151;
+      color: #cbd5e1;
       font-weight: 600;
-      letter-spacing: 1px;
       font-size: 14px;
+      letter-spacing: 1px;
       transition: 0.3s;
     }
 
-    nav a:hover { color: #2563eb; }
+    nav a:hover { color: #3b82f6; }
 
     section {
-      padding: 120px 10%;
+      padding: 120px 12%;
       min-height: 100vh;
-    }
-
-    #home {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    #home img {
-      width: 180px;
-      border-radius: 50%;
-      margin-bottom: 25px;
     }
 
     h1 {
       font-size: 48px;
       margin-bottom: 10px;
       letter-spacing: 2px;
-    }
-
-    .highlight {
-      color: #2563eb;
-      font-weight: bold;
+      color: #ffffff;
     }
 
     h2 {
-      margin-bottom: 20px;
       font-size: 28px;
-      border-left: 4px solid #2563eb;
-      padding-left: 10px;
+      margin-bottom: 25px;
+      border-left: 4px solid #3b82f6;
+      padding-left: 12px;
+      color: #ffffff;
     }
 
-    .content {
-      max-width: 900px;
-    }
+    .accent { color: #3b82f6; }
 
-    .card {
-      background: #f9fafb;
-      padding: 35px;
-      border-radius: 10px;
+    #home img {
+      width: 190px;
+      border-radius: 50%;
+      border: 3px solid #3b82f6;
       margin-bottom: 25px;
     }
 
+    .card {
+      background: #1e293b;
+      padding: 40px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+
+    .card:hover { transform: translateY(-6px); }
+
     .skill-bar {
-      background: #e5e7eb;
+      background: #334155;
       border-radius: 20px;
       overflow: hidden;
       margin-bottom: 15px;
@@ -92,14 +86,14 @@
 
     .skill-fill {
       height: 12px;
-      background: #2563eb;
+      background: #3b82f6;
     }
 
     footer {
+      background: #020617;
       text-align: center;
-      padding: 20px;
-      background: #111827;
-      color: white;
+      padding: 25px;
+      color: #94a3b8;
     }
   </style>
 </head>
@@ -109,7 +103,8 @@
 <nav>
   <a href="#home">HOME</a>
   <a href="#about">ABOUT</a>
-  <a href="#skills">SKILLS</a>
+  <a href="#skills">TECHNICAL SKILLS</a>
+  <a href="#languages">LANGUAGES KNOWN</a>
   <a href="#projects">PROJECTS</a>
   <a href="#contact">CONTACT</a>
 </nav>
@@ -117,30 +112,23 @@
 <section id="home">
   <img src="photo.jpg" alt="Profile Photo">
   <h1>THAPASWINI S</h1>
-  <div class="content">
-    <p>
-      I am an <span class="highlight">Artificial Intelligence student</span> with a strong ambition to become a professional Software Developer. 
-      My primary programming language is <span class="highlight">Java</span>, which I consider my first preference for building structured and scalable applications. 
-      I focus on developing strong fundamentals in data structures, object-oriented programming, and backend logic. 
-      Along with Java, I also work with Python, HTML, CSS, and database systems. 
-      My goal is to build efficient, clean, and production-ready software solutions. 
-      I continuously improve my problem-solving skills and work on real-time projects to strengthen my practical knowledge. 
-      I believe in disciplined learning, consistency, and writing quality code.
-    </p>
-  </div>
+  <p>
+    I am an <span class="accent">Artificial Intelligence Student</span> aspiring to become a professional Software Developer. 
+    My primary programming language is <span class="accent">JAVA</span>, and I focus strongly on mastering backend logic, 
+    object-oriented programming, and data structures. I aim to build scalable, efficient, and production-ready systems. 
+    I continuously improve my coding discipline, debugging ability, and algorithmic thinking to strengthen my foundation.
+  </p>
 </section>
 
 <section id="about">
   <h2>ABOUT ME</h2>
   <div class="card">
     <p>
-      I am currently pursuing my studies in Artificial Intelligence and developing a strong foundation in software engineering principles. 
-      My interest lies in backend development, application architecture, and building scalable systems. 
-      Java is my primary language, and I dedicate focused time to mastering it before expanding into other technologies. 
-      I actively practice logical problem-solving and algorithmic thinking. 
-      I am passionate about understanding how systems work internally rather than just using frameworks. 
-      My long-term vision is to become a skilled software developer capable of building enterprise-level applications. 
-      I am also comfortable communicating in multiple languages including Tamil, English, Hindi, and Japanese.
+      I am passionate about backend engineering and structured system development. 
+      My academic specialization in Artificial Intelligence enhances my analytical thinking and problem-solving capabilities. 
+      I prioritize strengthening core programming knowledge in Java before expanding into advanced frameworks. 
+      I enjoy understanding internal system architecture and application workflows. 
+      My long-term goal is to work as a Software Developer contributing to enterprise-level applications and impactful technology solutions.
     </p>
   </div>
 </section>
@@ -148,8 +136,9 @@
 <section id="skills">
   <h2>TECHNICAL SKILLS</h2>
   <div class="card">
-    <p><strong>JAVA (Primary Language)</strong></p>
-    <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+
+    <p><strong>JAVA (PRIMARY LANGUAGE)</strong></p>
+    <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
 
     <p><strong>PYTHON</strong></p>
     <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
@@ -160,11 +149,20 @@
     <p><strong>SQL & DATABASE MANAGEMENT</strong></p>
     <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
 
-    <p><strong>VERSION CONTROL (GIT & GITHUB)</strong></p>
+    <p><strong>GIT & GITHUB</strong></p>
     <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
 
+  </div>
+</section>
+
+<section id="languages">
+  <h2>LANGUAGES KNOWN</h2>
+  <div class="card">
     <p>
-      I focus on writing clean, optimized, and structured code while continuously improving debugging and development practices.
+      <strong>TAMIL</strong> – Native Proficiency<br><br>
+      <strong>ENGLISH</strong> – Professional Working Proficiency<br><br>
+      <strong>HINDI</strong> – Conversational Proficiency<br><br>
+      <strong>JAPANESE</strong> – Basic to Intermediate Communication Skills
     </p>
   </div>
 </section>
@@ -172,15 +170,36 @@
 <section id="projects">
   <h2>PROJECTS</h2>
   <div class="card">
+
     <p>
-      <strong>Portfolio Website:</strong> Developed and deployed a professional portfolio using HTML and CSS through GitHub Pages. 
-      <br><br>
-      <strong>Heart Disease Prediction System:</strong> Built a machine learning model using Python to analyze and predict medical outcomes. 
-      <br><br>
-      <strong>Database Management Project:</strong> Designed a structured database system focusing on data integrity and efficient querying using SQL.
-      <br><br>
-      Through these projects, I strengthened my understanding of application structure, logic building, and deployment workflows.
+      <strong>CLOUDBURST EARLY WARNING AND ALARM SYSTEM:</strong><br>
+      Designed a monitoring and alert mechanism to detect potential cloudburst conditions and trigger early warnings. 
+      The system focuses on environmental data tracking and automated emergency alerts to reduce disaster impact.
     </p>
+
+    <br>
+
+    <p>
+      <strong>CANDIDATE EVACUATION SYSTEM:</strong><br>
+      Developed a structured evacuation management system to guide individuals during emergency situations. 
+      The system emphasizes route optimization, safe zone identification, and coordinated evacuation strategies.
+    </p>
+
+    <br>
+
+    <p>
+      <strong>FLOOD FILL ALGORITHM IMPLEMENTATION:</strong><br>
+      Implemented the Flood Fill Algorithm to strengthen understanding of recursion, region traversal, and algorithmic logic in Java.
+    </p>
+
+    <br>
+
+    <p>
+      <strong>NOISE POLLUTION MAPPER AND MIXER:</strong><br>
+      Built a system to map and analyze environmental noise levels for better interpretation and awareness. 
+      This project improved my experience in structured data processing and environmental monitoring logic.
+    </p>
+
   </div>
 </section>
 
@@ -188,9 +207,8 @@
   <h2>CONTACT</h2>
   <div class="card">
     <p>
-      I am open to internships, collaborations, and software development opportunities. 
-      I am particularly interested in roles related to backend development and Java-based systems. 
-      If you would like to discuss potential opportunities or collaborations, feel free to connect.
+      I am actively seeking internship opportunities and entry-level roles in Software Development, particularly in Java-based backend systems. 
+      I am open to collaborations, learning opportunities, and professional discussions.
     </p>
     <p>Email: yourmail@gmail.com</p>
   </div>
