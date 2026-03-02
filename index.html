@@ -13,7 +13,7 @@
 
     body {
       height: 100vh;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background: linear-gradient(to right, #141e30, #243b55);
       color: white;
       display: flex;
       flex-direction: column;
@@ -27,7 +27,7 @@
 
     nav a {
       color: white;
-      margin: 0 20px;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
       cursor: pointer;
@@ -43,7 +43,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 40px;
+      padding: 30px;
     }
 
     .active {
@@ -51,8 +51,8 @@
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 40px;
+      background: rgba(0, 0, 0, 0.55);
+      padding: 35px;
       border-radius: 12px;
       width: 75%;
       max-height: 80vh;
@@ -65,8 +65,31 @@
 
     p {
       margin-bottom: 12px;
-      line-height: 1.6;
+      line-height: 1.7;
     }
+
+    .skill {
+      margin: 10px 0;
+      text-align: left;
+    }
+
+    .bar {
+      height: 8px;
+      background: gray;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .fill {
+      height: 8px;
+      background: #ffd700;
+    }
+
+    .contact a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
   </style>
 </head>
 
@@ -79,27 +102,27 @@
     <a onclick="showSection('home')">Home</a>
     <a onclick="showSection('about')">About</a>
     <a onclick="showSection('projects')">Projects</a>
-    <a onclick="showSection('skills')">Languages</a>
+    <a onclick="showSection('skills')">Technical Skills</a>
+    <a onclick="showSection('contact')">Contact</a>
   </nav>
 </header>
 
 <!-- HOME -->
 <div id="home" class="section active">
   <div class="card">
-    <h2>Welcome</h2>
+    <h2>Professional Summary</h2>
     <p>
-      I am an aspiring Software Developer passionate about designing
-      efficient, scalable, and impactful software solutions.
+      I am an aspiring Software Developer with a strong foundation in
+      programming, algorithm design, and system-based application development.
     </p>
     <p>
-      My interest lies in building system-oriented applications that solve
-      real-world problems using structured logic, algorithmic thinking,
-      and clean programming practices.
+      My focus lies in building structured, reliable, and scalable solutions
+      that solve real-world problems through logical analysis and optimized coding practices.
     </p>
     <p>
-      I continuously focus on strengthening my programming fundamentals,
-      improving problem-solving skills, and developing applications that
-      combine performance with reliability.
+      I continuously enhance my technical skills by working on
+      safety-oriented systems, environmental monitoring models,
+      and algorithmic implementations that strengthen my core programming ability.
     </p>
   </div>
 </div>
@@ -109,29 +132,24 @@
   <div class="card">
     <h2>About Me</h2>
     <p>
-      I am Thapaswini S, a dedicated Software Developer with strong
-      interest in system design, algorithm development, and
-      application-based problem solving.
+      I approach software development with analytical thinking
+      and a structured problem-solving mindset.
+      My interest lies in understanding system behavior,
+      identifying potential improvements,
+      and designing optimized solutions.
     </p>
     <p>
-      I enjoy transforming complex real-world challenges into
-      structured software solutions. My approach involves analyzing
-      problems deeply, designing logical workflows, and implementing
-      optimized code.
+      Through my academic projects, I have worked on
+      early warning systems, evacuation coordination models,
+      environmental data mapping, and algorithm implementations.
+      These projects reflect my ability to design logic-driven applications
+      with safety, efficiency, and reliability in mind.
     </p>
     <p>
-      My core strengths include:
-    </p>
-    <p>
-      • Logical and analytical thinking<br>
-      • Strong programming fundamentals<br>
-      • Structured problem solving<br>
-      • Ability to design safety-focused systems<br>
-      • Continuous learning mindset
-    </p>
-    <p>
-      I aim to grow as a developer who builds reliable,
-      performance-driven applications that create meaningful impact.
+      I believe strong fundamentals in Data Structures,
+      Algorithms, and Object-Oriented Programming
+      are essential for building scalable software systems,
+      and I actively focus on strengthening these areas.
     </p>
   </div>
 </div>
@@ -143,71 +161,92 @@
 
     <p>
       <strong>Cloudburst Early Warning and Alarm System:</strong><br>
-      Designed a structured alert mechanism to monitor environmental
-      conditions and identify potential cloudburst scenarios.
-      The system focuses on real-time parameter analysis,
-      risk evaluation logic, and automated warning generation.
-      This project enhanced my understanding of data monitoring,
-      event-driven logic, and safety-critical application design.
+      Designed a real-time alert system to monitor environmental
+      parameters and detect potential cloudburst conditions.
+      The system integrates threshold analysis logic and
+      automated alarm generation to minimize disaster impact.
+      This project enhanced my understanding of real-time data handling,
+      event-based triggers, and safety-critical software design.
     </p>
 
     <p>
       <strong>Candidate Evacuation System:</strong><br>
-      Developed a systematic evacuation coordination model to
-      guide individuals during emergency situations.
-      The system emphasizes route optimization, safe zone allocation,
-      and controlled movement strategies to ensure maximum safety.
-      This project strengthened my system design skills
-      and structured workflow implementation.
+      Developed a structured evacuation coordination system
+      focused on optimized routing, safe-zone allocation,
+      and controlled movement management.
+      The application demonstrates my ability to design
+      logical workflows for emergency scenarios.
     </p>
 
     <p>
       <strong>Flood Fill Algorithm Implementation:</strong><br>
-      Implemented the flood fill algorithm to understand
-      recursion, graph traversal techniques, and region-based
-      data processing logic.
-      This project significantly improved my algorithmic thinking,
-      debugging ability, and core programming skills.
+      Implemented the flood fill algorithm using recursion
+      to understand region traversal, graph-based logic,
+      and memory handling.
+      This strengthened my algorithmic thinking and debugging skills.
     </p>
 
     <p>
       <strong>Noise Pollution Mapper and Mixer:</strong><br>
-      Built a system to analyze environmental noise levels
-      and categorize intensity patterns across different zones.
-      The project involved structured data interpretation,
-      mapping logic, and sound-level processing concepts.
-      It enhanced my understanding of data-driven environmental
-      monitoring applications.
+      Built a system to analyze environmental sound intensity levels,
+      categorize zones based on noise thresholds,
+      and interpret data for better monitoring.
+      This improved my data analysis and structured processing skills.
     </p>
 
   </div>
 </div>
 
-<!-- SKILLS -->
+<!-- TECHNICAL SKILLS -->
 <div id="skills" class="section">
   <div class="card">
-    <h2>Languages & Technical Skills</h2>
+    <h2>Technical Skills</h2>
 
-    <p><strong>Programming Languages:</strong></p>
-    <p>Java</p>
-    <p>C</p>
-    <p>Python</p>
+    <div class="skill">
+      Java – 85%
+      <div class="bar"><div class="fill" style="width:85%"></div></div>
+    </div>
 
-    <p><strong>Web Technologies:</strong></p>
-    <p>HTML</p>
-    <p>CSS</p>
+    <div class="skill">
+      C – 75%
+      <div class="bar"><div class="fill" style="width:75%"></div></div>
+    </div>
+
+    <div class="skill">
+      Python – 70%
+      <div class="bar"><div class="fill" style="width:70%"></div></div>
+    </div>
+
+    <div class="skill">
+      HTML & CSS – 80%
+      <div class="bar"><div class="fill" style="width:80%"></div></div>
+    </div>
 
     <p><strong>Core Concepts:</strong></p>
     <p>
       Data Structures<br>
       Algorithms<br>
       Object-Oriented Programming<br>
-      Problem Solving Techniques
+      Logical Problem Solving
     </p>
 
-    <p><strong>Tools:</strong></p>
-    <p>VS Code, Git</p>
+  </div>
+</div>
 
+<!-- CONTACT -->
+<div id="contact" class="section">
+  <div class="card contact">
+    <h2>Contact</h2>
+
+    <p>Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="#">github.com/yourusername</a></p>
+
+    <p>
+      I am open to internship and entry-level software development
+      opportunities where I can contribute my skills and
+      continue learning in a professional environment.
+    </p>
   </div>
 </div>
 
