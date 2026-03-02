@@ -68,6 +68,16 @@
       line-height: 1.7;
     }
 
+    /* ===== PHOTO ADDED ===== */
+    .profile {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #00f2fe;
+    }
+
     .skill {
       margin: 15px 0;
       text-align: left;
@@ -109,6 +119,10 @@
 <!-- HOME -->
 <div id="home" class="section active">
   <div class="card">
+
+    <!-- ===== PHOTO ===== -->
+    <img src="profile.jpeg" class="profile">
+
     <h2>Professional Summary</h2>
     <p>
       I am an aspiring Software Developer with a strong foundation in
@@ -131,12 +145,11 @@
   <div class="card">
     <h2>About Me</h2>
     <p>
-      I approach software development with analytical thinking
-      and a structured problem-solving mindset.
+      Passionate about artificial intelligence and software development, with hands-on experience in machine learning projects and proficiency in Java, Python, React, and SQL.
     </p>
     <p>
       Through my academic projects, I have worked on
-      early warning systems, evacuation coordination models,
+      early warning systems, evaluation coordination models,
       environmental data mapping, and algorithm implementations.
       These projects reflect my ability to design logic-driven applications
       with safety, efficiency, and reliability in mind.
@@ -153,33 +166,24 @@
   <div class="card">
     <h2>Projects</h2>
 
-    <p>
-      <strong>Cloudburst Early Warning and Alarm System:</strong><br>
+    <p><strong>Cloudburst Early Warning and Alarm System:</strong><br>
       Designed a real-time alert system to monitor environmental
       parameters and detect potential cloudburst conditions.
-      Integrated threshold-based risk evaluation and automated
-      alarm triggering mechanisms to minimize disaster impact.
     </p>
 
-    <p>
-      <strong>Candidate Evacuation System:</strong><br>
+    <p><strong>Candidate Evacuation System:</strong><br>
       Developed a structured evacuation coordination system
-      focusing on optimized routing and safe-zone allocation
-      to ensure controlled and efficient emergency management.
+      focusing on optimized routing and safe-zone allocation.
     </p>
 
-    <p>
-      <strong>Flood Fill Algorithm Implementation:</strong><br>
+    <p><strong>Flood Fill Algorithm Implementation:</strong><br>
       Implemented the flood fill algorithm using recursion,
-      strengthening my understanding of graph traversal
-      and region-based processing logic.
+      strengthening my understanding of graph traversal logic.
     </p>
 
-    <p>
-      <strong>Noise Pollution Mapper and Mixer:</strong><br>
+    <p><strong>Noise Pollution Mapper and Mixer:</strong><br>
       Built a system to analyze and categorize environmental
-      sound intensity levels for structured monitoring
-      and improved data interpretation.
+      sound intensity levels for structured monitoring.
     </p>
 
   </div>
@@ -224,7 +228,7 @@
   <div class="card contact">
     <h2>Contact</h2>
 
-    <p>Email: <a href="mailto:thapaswinishanmugam@egmail.com">thapaswinishanmugam@gmail.com</a></p>
+    <p>Email: <a href="mailto:thapaswinishanmugam@gmail.com">thapaswinishanmugam@gmail.com</a></p>
     <p>LinkedIn: <a href="#">www.linkedin.com/in/thapaswini-s</a></p>
     <p>GitHub: <a href="#">github.com/Thapaswinishanmugam</a></p>
 
@@ -240,7 +244,6 @@
     sections.forEach(section => {
       section.classList.remove("active");
     });
-
     document.getElementById(sectionId).classList.add("active");
   }
 </script>
