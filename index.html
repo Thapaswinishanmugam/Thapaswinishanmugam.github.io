@@ -1,222 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>THAPASWINI S | SOFTWARE DEVELOPER</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <title>Thapaswini Portfolio</title>
   <style>
-    html { scroll-behavior: smooth; }
-
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
-      color: #e2e8f0;
-      line-height: 1.8;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
 
-    nav {
-      position: fixed;
-      width: 100%;
-      background: rgba(15,23,42,0.95);
-      padding: 18px 0;
+    body {
+      height: 100vh;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
       text-align: center;
-      border-bottom: 1px solid #1e293b;
-      z-index: 1000;
     }
 
     nav a {
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
-      margin: 0 25px;
-      color: #cbd5e1;
-      font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 1px;
-      transition: 0.3s;
+      font-weight: bold;
+      cursor: pointer;
     }
 
-    nav a:hover { color: #3b82f6; }
-
-    section {
-      padding: 120px 12%;
-      min-height: 100vh;
+    nav a:hover {
+      color: #ffd700;
     }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-      letter-spacing: 2px;
-      color: #ffffff;
+    .section {
+      display: none;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
     }
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 25px;
-      border-left: 4px solid #3b82f6;
-      padding-left: 12px;
-      color: #ffffff;
-    }
-
-    .accent { color: #3b82f6; }
-
-    #home img {
-      width: 190px;
-      border-radius: 50%;
-      border: 3px solid #3b82f6;
-      margin-bottom: 25px;
+    .active {
+      display: flex;
     }
 
     .card {
-      background: #1e293b;
-      padding: 40px;
-      border-radius: 12px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-      transition: 0.3s;
-    }
-
-    .card:hover { transform: translateY(-6px); }
-
-    .skill-bar {
-      background: #334155;
-      border-radius: 20px;
-      overflow: hidden;
-      margin-bottom: 15px;
-    }
-
-    .skill-fill {
-      height: 12px;
-      background: #3b82f6;
-    }
-
-    footer {
-      background: #020617;
-      text-align: center;
-      padding: 25px;
-      color: #94a3b8;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 30px;
+      border-radius: 10px;
+      width: 60%;
     }
   </style>
 </head>
-
 <body>
 
-<nav>
-  <a href="#home">HOME</a>
-  <a href="#about">ABOUT</a>
-  <a href="#skills">TECHNICAL SKILLS</a>
-  <a href="#languages">LANGUAGES KNOWN</a>
-  <a href="#projects">PROJECTS</a>
-  <a href="#contact">CONTACT</a>
-</nav>
+<header>
+  <h1>Thapaswini S</h1>
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('projects')">Projects</a>
+    <a onclick="showSection('skills')">Languages</a>
+  </nav>
+</header>
 
-<section id="home">
-  <img src="photo.jpg" alt="Profile Photo">
-  <h1>THAPASWINI S</h1>
-  <p>
-    I am an <span class="accent">Artificial Intelligence Student</span> aspiring to become a professional Software Developer. 
-    My primary programming language is <span class="accent">JAVA</span>, and I focus strongly on mastering backend logic, 
-    object-oriented programming, and data structures. I aim to build scalable, efficient, and production-ready systems. 
-    I continuously improve my coding discipline, debugging ability, and algorithmic thinking to strengthen my foundation.
-  </p>
-</section>
-
-<section id="about">
-  <h2>ABOUT ME</h2>
+<!-- HOME -->
+<div id="home" class="section active">
   <div class="card">
+    <h2>Welcome to My Portfolio</h2>
+    <p>Aspiring Full Stack Developer</p>
+    <p>Passionate about building real-world solutions.</p>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="section">
+  <div class="card">
+    <h2>About Me</h2>
     <p>
-      I am passionate about backend engineering and structured system development. 
-      My academic specialization in Artificial Intelligence enhances my analytical thinking and problem-solving capabilities. 
-      I prioritize strengthening core programming knowledge in Java before expanding into advanced frameworks. 
-      I enjoy understanding internal system architecture and application workflows. 
-      My long-term goal is to work as a Software Developer contributing to enterprise-level applications and impactful technology solutions.
+      I am Thapaswini S, an aspiring full stack developer
+      with strong interest in Java, problem solving and
+      system-based applications.
     </p>
   </div>
-</section>
+</div>
 
-<section id="skills">
-  <h2>TECHNICAL SKILLS</h2>
+<!-- PROJECTS -->
+<div id="projects" class="section">
   <div class="card">
+    <h2>My Projects</h2>
 
-    <p><strong>JAVA (PRIMARY LANGUAGE)</strong></p>
-    <div class="skill-bar"><div class="skill-fill" style="width:92%"></div></div>
-
-    <p><strong>PYTHON</strong></p>
-    <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
-
-    <p><strong>HTML & CSS</strong></p>
-    <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
-
-    <p><strong>SQL & DATABASE MANAGEMENT</strong></p>
-    <div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div>
-
-    <p><strong>GIT & GITHUB</strong></p>
-    <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
-
-  </div>
-</section>
-
-<section id="languages">
-  <h2>LANGUAGES KNOWN</h2>
-  <div class="card">
-    <p>
-      <strong>TAMIL</strong> – Native Proficiency<br><br>
-      <strong>ENGLISH</strong> – Professional Working Proficiency<br><br>
-      <strong>HINDI</strong> – Conversational Proficiency<br><br>
-      <strong>JAPANESE</strong> – Basic to Intermediate Communication Skills
-    </p>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>PROJECTS</h2>
-  <div class="card">
-
-    <p>
-      <strong>CLOUDBURST EARLY WARNING AND ALARM SYSTEM:</strong><br>
-      Designed a monitoring and alert mechanism to detect potential cloudburst conditions and trigger early warnings. 
-      The system focuses on environmental data tracking and automated emergency alerts to reduce disaster impact.
-    </p>
-
+    <p><strong>Cloudburst Early Warning and Alarm System</strong></p>
+    <p>Real-time alert system to detect potential cloudburst conditions.</p>
     <br>
 
-    <p>
-      <strong>CANDIDATE EVACUATION SYSTEM:</strong><br>
-      Developed a structured evacuation management system to guide individuals during emergency situations. 
-      The system emphasizes route optimization, safe zone identification, and coordinated evacuation strategies.
-    </p>
-
+    <p><strong>Candidate Evacuation System</strong></p>
+    <p>Emergency evacuation routing and safety management system.</p>
     <br>
 
-    <p>
-      <strong>FLOOD FILL ALGORITHM IMPLEMENTATION:</strong><br>
-      Implemented the Flood Fill Algorithm to strengthen understanding of recursion, region traversal, and algorithmic logic in Java.
-    </p>
-
+    <p><strong>Flood Fill Algorithm</strong></p>
+    <p>Implemented recursion-based region filling algorithm in Java.</p>
     <br>
 
-    <p>
-      <strong>NOISE POLLUTION MAPPER AND MIXER:</strong><br>
-      Built a system to map and analyze environmental noise levels for better interpretation and awareness. 
-      This project improved my experience in structured data processing and environmental monitoring logic.
-    </p>
-
+    <p><strong>Noise Pollution Mapper and Mixer</strong></p>
+    <p>System to analyze and visualize environmental noise levels.</p>
   </div>
-</section>
+</div>
 
-<section id="contact">
-  <h2>CONTACT</h2>
+<!-- SKILLS -->
+<div id="skills" class="section">
   <div class="card">
-    <p>
-      I am actively seeking internship opportunities and entry-level roles in Software Development, particularly in Java-based backend systems. 
-      I am open to collaborations, learning opportunities, and professional discussions.
-    </p>
-    <p>Email: yourmail@gmail.com</p>
-  </div>
-</section>
+    <h2>Languages Known</h2>
 
-<footer>
-  © 2026 THAPASWINI S | SOFTWARE DEVELOPER
-</footer>
+    <p><strong>Programming Languages:</strong></p>
+    <p>Java, C, Python</p>
+    <br>
+
+    <p><strong>Web Technologies:</strong></p>
+    <p>HTML, CSS</p>
+    <br>
+
+    <p><strong>Tools:</strong></p>
+    <p>VS Code, Git</p>
+  </div>
+</div>
+
+<script>
+  function showSection(sectionId) {
+    const sections = document.querySelectorAll(".section");
+    sections.forEach(section => {
+      section.classList.remove("active");
+    });
+
+    document.getElementById(sectionId).classList.add("active");
+  }
+</script>
 
 </body>
 </html>
