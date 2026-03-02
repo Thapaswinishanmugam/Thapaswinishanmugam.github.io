@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thapaswini | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #111;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00adb5;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .container {
+      width: 85%;
+      margin: auto;
+      max-width: 900px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ddd;
+      text-align: left;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    h1, h2 {
+      color: #222;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section>
+  <div class="container">
+    <img src="https://via.placeholder.com/150">
+    <h1>Hello, I'm Thapaswini 👩‍💻</h1>
+    <p>
+      I am an aspiring Full Stack Developer with a strong passion for building 
+      clean, scalable, and user-friendly web applications. I continuously improve 
+      my programming and problem-solving skills while working on practical projects. 
+      My goal is to develop impactful solutions that combine technology and innovation.
+    </p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <div class="card">
+      <h2>About Me</h2>
+      <p>
+        I am currently pursuing engineering with a focused interest in software development. 
+        My journey began with programming languages like C and Java, and I gradually developed 
+        an interest in web technologies and database systems. I enjoy solving logical problems 
+        and writing structured, efficient code. I believe consistency, discipline, and continuous 
+        learning are essential to becoming a successful developer. I am actively working towards 
+        mastering full stack development.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="card">
+      <h2>Skills</h2>
+      <p>
+        <strong>Programming:</strong> Java, Python, C <br><br>
+        <strong>Web Development:</strong> HTML, CSS (Learning JavaScript) <br><br>
+        <strong>Database:</strong> DBMS, SQL <br><br>
+        <strong>Tools:</strong> GitHub, VS Code <br><br>
+        <strong>Soft Skills:</strong> Communication, Teamwork, Problem Solving
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <div class="card">
+      <h2>Projects</h2>
+
+      <p>
+        <strong>Cloudburst Early Warning and Alarm System:</strong><br>
+        Designed a system aimed at detecting sudden cloudburst conditions using environmental 
+        monitoring concepts. The system focuses on identifying rapid weather changes and generating 
+        early alerts to minimize risk and potential damage. This project enhanced my understanding 
+        of system design, real-time monitoring, and practical problem-solving in critical situations.
+      </p>
+
+      <br>
+
+      <p>
+        <strong>Student Management System:</strong><br>
+        Developed using Java and database concepts to manage student records efficiently. 
+        The project strengthened my backend development skills and understanding of data handling.
+      </p>
+
+      <br>
+
+      <p>
+        <strong>Basic Web Projects:</strong><br>
+        Created responsive web pages using HTML and CSS to understand layout design, structure, 
+        and user interface fundamentals.
+      </p>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>
+        📧 Email: thapaswinishanmugam@gmail.com <br><br>
+        📍 Location: Karur, India <br><br>
+        💻 GitHub: github.com/Thapaswinishanmugam
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Thapaswini | Portfolio Website
+</footer>
+
+</body>
+</html>
