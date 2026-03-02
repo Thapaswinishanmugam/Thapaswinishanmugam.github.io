@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thapaswini Portfolio</title>
+  <title>Thapaswini S | Software Developer</title>
+
   <style>
     * {
       margin: 0;
@@ -12,21 +13,21 @@
 
     body {
       height: 100vh;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
       display: flex;
       flex-direction: column;
     }
 
     header {
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0, 0, 0, 0.6);
       padding: 15px;
       text-align: center;
     }
 
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 20px;
       text-decoration: none;
       font-weight: bold;
       cursor: pointer;
@@ -42,7 +43,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px;
+      padding: 40px;
     }
 
     .active {
@@ -50,17 +51,30 @@
     }
 
     .card {
-      background: rgba(0, 0, 0, 0.4);
-      padding: 30px;
-      border-radius: 10px;
-      width: 60%;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 40px;
+      border-radius: 12px;
+      width: 75%;
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      line-height: 1.6;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Thapaswini S</h1>
+  <p>Software Developer</p>
   <nav>
     <a onclick="showSection('home')">Home</a>
     <a onclick="showSection('about')">About</a>
@@ -72,9 +86,21 @@
 <!-- HOME -->
 <div id="home" class="section active">
   <div class="card">
-    <h2>Welcome to My Portfolio</h2>
-    <p>Aspiring Full Stack Developer</p>
-    <p>Passionate about building real-world solutions.</p>
+    <h2>Welcome</h2>
+    <p>
+      I am an aspiring Software Developer passionate about designing
+      efficient, scalable, and impactful software solutions.
+    </p>
+    <p>
+      My interest lies in building system-oriented applications that solve
+      real-world problems using structured logic, algorithmic thinking,
+      and clean programming practices.
+    </p>
+    <p>
+      I continuously focus on strengthening my programming fundamentals,
+      improving problem-solving skills, and developing applications that
+      combine performance with reliability.
+    </p>
   </div>
 </div>
 
@@ -83,9 +109,29 @@
   <div class="card">
     <h2>About Me</h2>
     <p>
-      I am Thapaswini S, an aspiring full stack developer
-      with strong interest in Java, problem solving and
-      system-based applications.
+      I am Thapaswini S, a dedicated Software Developer with strong
+      interest in system design, algorithm development, and
+      application-based problem solving.
+    </p>
+    <p>
+      I enjoy transforming complex real-world challenges into
+      structured software solutions. My approach involves analyzing
+      problems deeply, designing logical workflows, and implementing
+      optimized code.
+    </p>
+    <p>
+      My core strengths include:
+    </p>
+    <p>
+      • Logical and analytical thinking<br>
+      • Strong programming fundamentals<br>
+      • Structured problem solving<br>
+      • Ability to design safety-focused systems<br>
+      • Continuous learning mindset
+    </p>
+    <p>
+      I aim to grow as a developer who builds reliable,
+      performance-driven applications that create meaningful impact.
     </p>
   </div>
 </div>
@@ -93,40 +139,75 @@
 <!-- PROJECTS -->
 <div id="projects" class="section">
   <div class="card">
-    <h2>My Projects</h2>
+    <h2>Projects</h2>
 
-    <p><strong>Cloudburst Early Warning and Alarm System</strong></p>
-    <p>Real-time alert system to detect potential cloudburst conditions.</p>
-    <br>
+    <p>
+      <strong>Cloudburst Early Warning and Alarm System:</strong><br>
+      Designed a structured alert mechanism to monitor environmental
+      conditions and identify potential cloudburst scenarios.
+      The system focuses on real-time parameter analysis,
+      risk evaluation logic, and automated warning generation.
+      This project enhanced my understanding of data monitoring,
+      event-driven logic, and safety-critical application design.
+    </p>
 
-    <p><strong>Candidate Evacuation System</strong></p>
-    <p>Emergency evacuation routing and safety management system.</p>
-    <br>
+    <p>
+      <strong>Candidate Evacuation System:</strong><br>
+      Developed a systematic evacuation coordination model to
+      guide individuals during emergency situations.
+      The system emphasizes route optimization, safe zone allocation,
+      and controlled movement strategies to ensure maximum safety.
+      This project strengthened my system design skills
+      and structured workflow implementation.
+    </p>
 
-    <p><strong>Flood Fill Algorithm</strong></p>
-    <p>Implemented recursion-based region filling algorithm in Java.</p>
-    <br>
+    <p>
+      <strong>Flood Fill Algorithm Implementation:</strong><br>
+      Implemented the flood fill algorithm to understand
+      recursion, graph traversal techniques, and region-based
+      data processing logic.
+      This project significantly improved my algorithmic thinking,
+      debugging ability, and core programming skills.
+    </p>
 
-    <p><strong>Noise Pollution Mapper and Mixer</strong></p>
-    <p>System to analyze and visualize environmental noise levels.</p>
+    <p>
+      <strong>Noise Pollution Mapper and Mixer:</strong><br>
+      Built a system to analyze environmental noise levels
+      and categorize intensity patterns across different zones.
+      The project involved structured data interpretation,
+      mapping logic, and sound-level processing concepts.
+      It enhanced my understanding of data-driven environmental
+      monitoring applications.
+    </p>
+
   </div>
 </div>
 
 <!-- SKILLS -->
 <div id="skills" class="section">
   <div class="card">
-    <h2>Languages Known</h2>
+    <h2>Languages & Technical Skills</h2>
 
     <p><strong>Programming Languages:</strong></p>
-    <p>Java, C, Python</p>
-    <br>
+    <p>Java</p>
+    <p>C</p>
+    <p>Python</p>
 
     <p><strong>Web Technologies:</strong></p>
-    <p>HTML, CSS</p>
-    <br>
+    <p>HTML</p>
+    <p>CSS</p>
+
+    <p><strong>Core Concepts:</strong></p>
+    <p>
+      Data Structures<br>
+      Algorithms<br>
+      Object-Oriented Programming<br>
+      Problem Solving Techniques
+    </p>
 
     <p><strong>Tools:</strong></p>
     <p>VS Code, Git</p>
+
   </div>
 </div>
 
