@@ -70,12 +70,13 @@
 
     /* ===== PHOTO ===== */
     .profilee {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      border: 4px solid #00f2fe;
+    width: 160px;           /* size on screen */
+    height: 160px;
+    border-radius: 50%;     /* circle */
+    object-fit: cover;      /* crop to fit, no stretch */
+    display: block;
+    margin: 0 auto 20px;    /* center + space below */
+    border: 4px solid #00f2fe; /* cyan border */
     }
 
     .skill {
