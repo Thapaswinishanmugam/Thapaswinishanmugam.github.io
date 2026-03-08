@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>THAPASWINI S</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
     * {
@@ -25,12 +26,25 @@
       text-align: center;
     }
 
+    header h1 {
+      font-size: clamp(1.2rem, 4vw, 2rem);
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
     nav a {
       color: white;
-      margin: 0 15px;
+      margin: 0 8px;
       text-decoration: none;
       font-weight: bold;
       cursor: pointer;
+      font-size: clamp(0.75rem, 2.5vw, 1rem);
     }
 
     nav a:hover {
@@ -43,7 +57,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 30px;
+      padding: 20px 15px;
     }
 
     .active {
@@ -52,37 +66,42 @@
 
     .card {
       background: rgba(0, 0, 0, 0.55);
-      padding: 35px;
+      padding: 25px 20px;
       border-radius: 12px;
-      width: 75%;
+      width: 90%;
+      max-width: 700px;
       max-height: 80vh;
       overflow-y: auto;
     }
 
     h2 {
       margin-bottom: 20px;
+      font-size: clamp(1.1rem, 3vw, 1.5rem);
     }
 
     p {
       margin-bottom: 12px;
       line-height: 1.7;
+      text-align: justify;
+      font-size: clamp(0.85rem, 2.5vw, 1rem);
     }
 
     /* ===== PHOTO ===== */
     .profilee {
-    width: 160px;         /* size of photo */
-    height: 160px;
-    border-radius: 50%;    /* square shape */
-    object-fit: cover;
-      object-position: center 25%;
+      width: clamp(120px, 35vw, 160px);
+      height: clamp(120px, 35vw, 160px);
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
       display: block;
       margin: 0 auto 20px;
-      border: 4px solid #00f2fe;/* optional border */
+      border: 4px solid #00f2fe;
     }
 
     .skill {
       margin: 15px 0;
       text-align: left;
+      font-size: clamp(0.85rem, 2.5vw, 1rem);
     }
 
     .bar {
@@ -90,6 +109,7 @@
       background: gray;
       border-radius: 5px;
       overflow: hidden;
+      margin-top: 5px;
     }
 
     .fill {
@@ -102,6 +122,37 @@
       text-decoration: none;
     }
 
+    /* About section specific */
+    #about .card p,
+    #projects .card p,
+    #contact .card p {
+      text-align: justify;
+    }
+
+    #projects .card p strong {
+      display: block;
+      margin-bottom: 4px;
+      text-align: left;
+    }
+
+    h3 {
+      font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+      margin-top: 25px;
+      margin-bottom: 8px;
+    }
+
+    /* Mobile tweaks */
+    @media (max-width: 480px) {
+      .card {
+        width: 100%;
+        padding: 20px 15px;
+        max-height: 85vh;
+      }
+
+      nav a {
+        margin: 3px 5px;
+      }
+    }
   </style>
 </head>
 
@@ -121,17 +172,14 @@
 <!-- HOME -->
 <div id="home" class="section active">
   <div class="card">
-
-    <!-- ===== PHOTO ===== -->
     <img src="profilee.jpeg" class="profilee">
-
     <h2>THAPASWINI S</h2>
     <p>
-      Hello! I am THAPASWINI S, currently in my 2nd year of the Artificial Intelligence and Data Science (AIDS) program at M. Kumarasamy College of Engineering, Karur.  
+      Hello! I am THAPASWINI S, currently in my 2nd year of the Artificial Intelligence and Data Science (AIDS) at M. Kumarasamy College of Engineering, Karur.
       As an aspiring Software Developer, I am passionate about designing efficient, reliable, and scalable software solutions.
     </p>
     <p>
-      I actively work on projects that strengthen my programming skills, problem-solving abilities, and practical understanding of algorithms and system design.  
+      I actively work on projects that strengthen my programming skills, problem-solving abilities, and practical understanding of algorithms and system design.
       I am proficient in Java, C, Python, and web technologies, and continuously seek opportunities to innovate and apply AI-driven techniques to real-world challenges.
     </p>
   </div>
@@ -159,26 +207,25 @@
   <div class="card">
     <h2>Projects</h2>
 
-    <p><strong>Cloudburst Early Warning and Alarm System:</strong><br>
+    <p><strong>Cloudburst Early Warning and Alarm System:</strong>
       Designed a real-time alert system to monitor environmental parameters and detect potential cloudburst conditions.
       This system evaluates risk levels continuously and triggers alarms to minimize disaster impact.
     </p>
 
-    <p><strong>Candidate Evacuation System:</strong><br>
+    <p><strong>Candidate Evacuation System:</strong>
       Developed a structured evacuation coordination system focusing on optimized routing and safe-zone allocation.
       It helps ensure controlled and efficient evacuation during emergencies.
     </p>
 
-    <p><strong>Flood Fill Algorithm Implementation:</strong><br>
+    <p><strong>Flood Fill Algorithm Implementation:</strong>
       Implemented the flood fill algorithm using recursion to fill regions in grids or images.
       Strengthened understanding of graph traversal, recursion, and region-based logic.
     </p>
 
-    <p><strong>Noise Pollution Mapper and Mixer:</strong><br>
+    <p><strong>Noise Pollution Mapper and Mixer:</strong>
       Built a system to analyze and categorize environmental sound intensity levels for monitoring purposes.
       Allows structured mapping and interpretation of noise pollution data.
     </p>
-
   </div>
 </div>
 
@@ -191,28 +238,21 @@
       Java – 85%
       <div class="bar"><div class="fill" style="width:85%"></div></div>
     </div>
-
     <div class="skill">
       C – 75%
       <div class="bar"><div class="fill" style="width:75%"></div></div>
     </div>
-
     <div class="skill">
       Python – 70%
       <div class="bar"><div class="fill" style="width:70%"></div></div>
     </div>
-
     <div class="skill">
       HTML & CSS – 80%
       <div class="bar"><div class="fill" style="width:80%"></div></div>
     </div>
 
-    <h3 style="margin-top:25px;">Languages</h3>
-    <p>Tamil</p>
-    <p>English</p>
-    <p>Hindi</p>
-    <p>Japanese</p>
-
+    <h3>Languages</h3>
+    <p style="text-align:left;">Tamil &nbsp;|&nbsp; English &nbsp;|&nbsp; Hindi &nbsp;|&nbsp; Japanese</p>
   </div>
 </div>
 
@@ -220,11 +260,9 @@
 <div id="contact" class="section">
   <div class="card contact">
     <h2>Contact</h2>
-
     <p>Email: <a href="mailto:thapaswinishanmugam@gmail.com">thapaswinishanmugam@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">www.linkedin.com/in/thapaswini-s</a></p>
-    <p>GitHub: <a href="#">github.com/Thapaswinishanmugam</a></p>
-
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/thapaswini-s" target="_blank">www.linkedin.com/in/thapaswini-s</a></p>
+    <p>GitHub: <a href="https://github.com/Thapaswinishanmugam" target="_blank">github.com/Thapaswinishanmugam</a></p>
     <p>
       Open to internship and entry-level software development opportunities.
     </p>
