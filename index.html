@@ -625,4 +625,35 @@
   // Section switching
   function showSection(id) {
     document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
-    document.query
+    document.querySelectorAll('nav a').forEach(a => a.classList.remove('active-nav'));
+    const sec = document.getElementById(id);
+    sec.classList.add('active');
+    const order = ['home','about','projects','skills','contact'];
+    const idx = order.indexOf(id);
+    document.querySelectorAll('nav a')[idx]?.classList.add('active-nav');
+    if (id === 'skills') setTimeout(animateBars, 100);
+  }
+
+  // Skill bar animation
+  function animateBars() {
+    document.querySelectorAll('.fill').forEach(bar => {
+      bar.style.width = bar.dataset.width + '%';
+    });
+  }
+
+  // Scroll progress
+  window.addEventListener('scroll', () => {
+    const doc = document.documentElement;
+    const pct = (doc.scrollTop / (doc.scrollHeight - doc.clientHeight)) * 100;
+    document.getElementById('progress-bar').style.width = pct + '%';
+  });
+
+  // Dark/Light toggle
+  function toggleTheme() {
+    document.body.classList.toggle('light');
+    document.getElementById('theme-toggle').textContent =
+      document.body.classList.contains('light') ? '🌙 Dark' : '☀ Light';
+  }
+</script>
+</body>
+</html>
